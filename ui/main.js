@@ -13,12 +13,12 @@ function moveRight(){
 }
 image.onclick = function(){
     var interval = setInterval(moveRight,10);
-    element.innerHTML = 'You Clicked !!! i am going away :(';
+    element.innerHTML = `<h2>You Clicked !!! i am going away :(</h2>`;
    
 };
 
 element.onclick = function(){
     var interval = setInterval(moveRight,10);
-    element.innerHTML = 'You Clicked !!! i am going away :(';
+    element.innerHTML = `<h2>You Clicked !!! i am going away :(</h2>`;
    
 };
