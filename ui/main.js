@@ -26,7 +26,7 @@ element.onclick = function(){
                 var counter =request.responseText;
                 var span = document.getElementByI('count');
                 span.innerHTML = counter.toString();
-                element.innerHTML = `<h2>You Clicked !!! i am going away :(</h2> <hr/> <h3>No of clicks made are  <span id ="count">0</span></h3>`;
+                
             }
         }
     };
