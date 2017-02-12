@@ -4,7 +4,7 @@ var image = document.getElementById('singh');
 var marginLeft = 0;
 
 function moveRight(){
-    marginLeft = marginLeft + 1;
+    marginLeft = marginLeft + 10;
     image.style.marginLeft= marginLeft + 'px';
 }
 image.onclick = function(){
