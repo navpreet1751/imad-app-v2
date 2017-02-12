@@ -30,7 +30,7 @@ element.onclick = function(){
         }
     };
     request.open('GET','http://navpreet1751.imad.hasura-app.io/counter',true);
-    request.sent(null);
+    request.sent(null)
     element.innerHTML = `<h2>You Clicked !!! i am going away :(</h2> <hr/> <h3>No of clicks made are  <span id ="count">0</span></h3>`;
    
    
