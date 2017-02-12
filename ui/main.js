@@ -16,3 +16,9 @@ image.onclick = function(){
     element.innerHTML = 'I am going away';
    
 };
+
+element.onclick = function(){
+    
+    element.innerHTML = 'I am going away';
+   
+};
