@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var countr = 0;
+var counter = 0;
 var articletwo={
     title:'Article-Two | Navpreet Singh',
     heading:'Article-Two',
