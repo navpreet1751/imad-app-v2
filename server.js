@@ -5,9 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articletwo = {
-    title:'Article-two | Navpreet Singh',
-    heading:'Article-two',
+var articletwo={
+    title:'Article-Two | Navpreet Singh',
+    heading:'Article-Two',
     date:'Feb 12 2017',
     content:`<p>
             This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article
@@ -19,6 +19,34 @@ var articletwo = {
             This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article.This is the content of my second article
         </p>`
         
+};
+var articles = {
+    'article-three': {
+        title:'Article-three | Navpreet Singh',
+        heading:'Article-three',
+        date:'Feb 13 2017',
+        content:`<p>
+            This is the content of my third article.
+        </p>
+        <p>
+            This is the content of my third article.
+        </p>
+        <<p>
+            This is the content of my third article.
+        </p>`},
+    'article-four': {
+        title:'Article-Fourth | Navpreet Singh',
+        heading:'Article-Fourth',
+        date:'Feb 13 2017',
+        content:`<p>
+            This is the content of my fourth article.
+        </p>
+        <p>
+            This is the content of my fourth article.
+        </p>
+        <<p>
+            This is the content of my fourth article.
+        </p>`},
 };
 
 function createTemplate(data){
@@ -50,6 +78,7 @@ var htmlTemplate = `<!doctype html>
 
 return htmlTemplate;
 }
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -73,6 +102,13 @@ app.get('/article-one', function (req, res) {
 });
 app.get('/article-two', function (req, res) {
   res.send(createTemplate(articletwo));
+});
+
+app.get('/articleName', function (req, res) {
+    //articlename= article-two
+    //articles(articleName)={} content object for artice one
+    var articleName = req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
 
