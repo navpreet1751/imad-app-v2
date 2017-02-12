@@ -19,6 +19,19 @@ image.onclick = function(){
 
 element.onclick = function(){
     var interval = setInterval(moveRight,10);
+    var requst = new XMLHttpRequest();
+    request.onreaystatechange = function (){
+        if(request.readystate === XMLHttpRequest.DONE){
+            if(request.status === 200){
+                var counter =request.responseText;
+                var span = document.getElementByI('count');
+                span.innerHTML = counter.toString();
+            }
+        }
+    };
+    request.open('GET','http://navpreet1751.imad.hasura-app.io/counter',true);
+    request.sent(null);
     element.innerHTML = `<h2>You Clicked !!! i am going away :(</h2> <hr/> <h3>No of clicks made are  <span id ="count">0</span></h3>`;
+   
    
 };
