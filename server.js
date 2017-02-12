@@ -22,8 +22,8 @@ var articletwo={
 };
 var articles = {
     'article-three': {
-        title:'Article-three | Navpreet Singh',
-        heading:'Article-three',
+        title:'Article three | Navpreet Singh',
+        heading:'Article three',
         date:'Feb 13 2017',
         content:`<p>
             This is the content of my third article.
@@ -35,8 +35,8 @@ var articles = {
             This is the content of my third article.
         </p>`},
     'article-four': {
-        title:'Article-Fourth | Navpreet Singh',
-        heading:'Article-Fourth',
+        title:'Article Four | Navpreet Singh',
+        heading:'Article Four',
         date:'Feb 13 2017',
         content:`<p>
             This is the content of my fourth article.
