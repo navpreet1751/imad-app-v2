@@ -91,7 +91,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('singhbean.jpg', function (req, res) {
+app.get('/ui/singhbean.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'singhbean.jpg'));
 });
 app.get('/profile', function (req, res) {
