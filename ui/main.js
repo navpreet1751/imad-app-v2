@@ -19,7 +19,7 @@ image.onclick = function(){
 
 element.onclick = function(){
     var interval = setInterval(moveRight,10);
-    var requst = new XMLHttpRequest();
+    var request = new XMLHttpRequest();
     request.onreaystatechange = function (){
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status === 200){
