@@ -31,7 +31,7 @@ var articles = {
         <p>
             This is the content of my third article.
         </p>
-        <<p>
+        <p>
             This is the content of my third article.
         </p>`},
     'article-four': {
@@ -44,7 +44,7 @@ var articles = {
         <p>
             This is the content of my fourth article.
         </p>
-        <<p>
+        <p>
             This is the content of my fourth article.
         </p>`},
 };
