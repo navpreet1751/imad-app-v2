@@ -24,8 +24,8 @@ element.onclick = function(){
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status === 200){
                 var counter =request.responseText;
-                var span = document.getElementById('count');
-                span.innerHTML = counter.toString();
+                var span1 = document.getElementById('count');
+                span1.innerHTML = counter.toString();
                 
             }
         }
@@ -33,6 +33,6 @@ element.onclick = function(){
     request.open('GET','http://navpreet1751.imad.hasura-app.io/counter',true);
     request.send(null)
     
-   element.innerHTML = `<h2>You Clicked !!! i am going away :(</h2> <hr/> <h3>No of clicks made are  <span id ="count">0</span></h3>`;
+   element.innerHTML = `<h2>You Clicked !!! i am going away :(</h2> <hr/> <h3>No of clicks made are  <span id ="count">span1</span></h3>`;
    
 };
