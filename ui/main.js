@@ -21,6 +21,7 @@ element.onclick = function(){
     alert('Inside function');
     var interval = setInterval(moveRight,10);
     var request = new XMLHttpRequest();
+    alert('On Ready State');
     request.onreaystatechange = function (){
         alert('request.readystate');
         if(request.readystate === XMLHttpRequest.DONE){
