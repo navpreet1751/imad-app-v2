@@ -24,8 +24,10 @@ element.onclick = function(){
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status === 200){
                 var counter = request.responseText;
-                var p = document.getElementById('count');
-                p.innerHTML = counter.toString();
+                alert('counter');
+                document.getElementById('count').innerHtml = counter;
+                //var p = document.getElementById('count');
+                //p.innerHTML = counter.toString();
                 
             }
         }
