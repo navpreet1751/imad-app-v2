@@ -23,7 +23,7 @@ element.onclick = function(){
     request.onreaystatechange = function (){
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status === 200){
-                var counter =request.responseText;
+                var counter = request.responseText;
                 var p = document.getElementById('count');
                 p.innerHTML = counter.toString();
                 
