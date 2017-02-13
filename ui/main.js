@@ -18,9 +18,11 @@ image.onclick = function(){
 };
 
 element.onclick = function(){
+    alert('Inside function');
     var interval = setInterval(moveRight,10);
     var request = new XMLHttpRequest();
     request.onreaystatechange = function (){
+        alert(request.readystate);
         if(request.readystate === XMLHttpRequest.DONE){
             if(request.status === 200){
                 var counter = request.responseText;
